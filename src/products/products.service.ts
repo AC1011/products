@@ -14,6 +14,14 @@ export class ProductsService {
   }
 
   getProducts() {
+    var product1 = new Product ("1", "Produkt1", "Das ist ein Produkt", 20);
+    var product2 = new Product ("2", "Produkt2", "Das ist ein Produkt", 25);
+    var product3 = new Product ("3", "Produkt3", "Das ist ein Produkt", 30);
+    var product4 = new Product ("4", "Produkt4", "Das ist ein Produkt", 35);
+    var product5 = new Product ("5", "Produkt5", "Das ist ein Produkt", 40);
+    var product6 = new Product ("6", "Produkt6", "Das ist ein Produkt", 45);
+
+    this.products.push(product1, product2, product3, product4, product5, product6);
     return [...this.products];
   }
 
